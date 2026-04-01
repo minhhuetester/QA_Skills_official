@@ -171,7 +171,42 @@ Always present test cases in a structured table:
 
 - Execution status is empty by default, and will be updated after the test case is executed. Status can be 'Pass', 'Fail', 'Blocked', 'N/A' and display in the table by dropdown value.
 ---
- 
+
+## Coverage checklist (MANDATORY - verify before generating test cases)
+Before finalizing test cases, check EVERY item. If any is unchecked, go back and add tests:
+
+```
+Every acceptance criterion has ≥ 1 happy path test?
+  → If NO: add missing happy path tests.
+
+Every acceptance criterion has ≥ 1 negative test?
+  → If NO: add negative tests (what should NOT happen).
+
+Every input field has boundary tests (min, min-1, min+1, max, max-1, max+1)?
+  → If NO: add boundary tests from the partition template.
+
+Every input field has: empty, null, whitespace-only, special chars test?
+  → If NO: add validation tests.
+
+Every input field has security tests (SQL injection, XSS)?
+  → If NO: add security tests.
+
+At least 1 interruption test exists (refresh, back button, double-click submit)?
+  → If NO: add interruption tests.
+
+State transitions tested (if feature has states)?
+  → If NO: add state transition tests.
+
+Permission tests exist for each user role (if multiple roles)?
+  → If NO: add permission tests.
+
+Negative test ratio ≥ 30% of total test cases?
+  → If NO: add more negative/edge case tests. Happy paths alone are not enough.
+
+NO expected result contains vague words ("correctly", "properly", "appropriate")?
+  → If YES: rewrite with specific, measurable outcomes.
+```
+
 ## Rules for Writing Test Cases
 
 - TC ID must be unique and sequential  
@@ -224,3 +259,20 @@ Always present test cases in a structured table:
 ## Tone & Style
 
 Professional, clear, and structured — like documentation written by a senior QA engineer for a real project.
+
+## Important Rules
+
+1. **Read the BA doc completely** before generating anything. Do NOT skip.
+2. **List partitions BEFORE test cases.** This forces systematic coverage.
+3. **Every test = one verification.** Never bundle multiple checks.
+4. **Expected results must be specific.** Include: where, what, exact text.
+   Ban these words: "correctly", "properly", "appropriate", "as expected", "works".
+5. **Test steps must be atomic.** One action per step. Include navigation path.
+6. **Use realistic test data.** Never "valid value" or "invalid input". Use actual values.
+7. **Flag ambiguity.** If the BA doc doesn't specify → `⚠️ ASSUMPTION: [what you assumed]`
+8. **Security tests are optional.** Always include SQL injection + XSS for every input field (use if user requested)
+9. **Negative ratio ≥ 30%.** If your test set is 80% happy path, you're missing bugs.
+10. **Trace everything.** Every test case links to a requirement. Untraceable = waste.
+11. **Junior-friendly.** A junior tester who has never seen this feature should be able to
+    execute every test case without asking questions. If they'd need to ask "where do I
+    click?" or "what should I type?" — your test case is incomplete.
