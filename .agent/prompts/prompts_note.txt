@@ -1,0 +1,40 @@
+Prompts tham khảo sử dụng trong Antigravity:
+
+** Cách 1 :
+Use prompt: [manual_testcases_prompt.md]  
+Apply rules from: [manual_testcases_rule.md]
+Apply skills from: [generate_manual_testcases_skill.md]  
+Apply workflows from: [manual_testcases_workflow.md]
+
+Context:
+- System: [Web / Mobile / API]
+- Module: [Tên module cần test]
+- URL (nếu có): [URL hệ thống]
+
+Requirement:
+[Paste requirement]
+
+
+** Cách 2 :
+Use prompt: [generate_testcases.prompt.md]
+
+Strictly follow:
+- Apply rules from: [manual_testcases_rule.md]
+- Apply skills from: [generate_manual_testcases_skill.md]  
+- Apply workflows from: [manual_testcases_workflow.md]
+
+Additional constraints:
+- Avoid duplicate test cases
+- Prioritize high-risk scenarios
+- Focus on edge cases
+
+Feature:
+Airline pricing system
+
+Requirement:
+[Paste]
+
+Expected:
+- Full coverage
+- CSV format
+- Clear test data
