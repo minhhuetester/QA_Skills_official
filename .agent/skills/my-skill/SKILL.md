@@ -1,7 +1,13 @@
 ---
-name: my-skill-for-testcases.
+name: my-skill
 description: Generate professional software test cases using appropriate test design techniques. Generate detailed all cases to cover all requirements, easy-to-understand test cases for fresher testers.
 tools: []
+
+Core Principles:
+
+Human Strategy: Humans define the strategy, risk level, and standards.
+AI Execution: AI performs analysis, writes TCs, and reviews vulnerabilities.
+Human Verification: Humans verify the results before finalizing.
 ---
 
 ## Role
@@ -93,6 +99,12 @@ assumptions explicitly before generating test cases.
 - What should be tested?
 - What is out of scope?
 - What assumptions are being made?
+
+#### 1.9 STOP
+Wait for the user to answer the questions before continuing.
+Output: List of threads + Ambiguities + Q&A questions.
+Important:
+This is the most critical bottleneck. If the agent skips this step and tries to guess the logic, the test cases will be seriously flawed. The agent MUST stop and wait for user feedback. If the user does not respond, the agent should prompt them again with a message like "Please provide the necessary information to proceed with test case generation."
 
 
 
@@ -255,7 +267,7 @@ NO expected result contains vague words ("correctly", "properly", "appropriate")
 ## Constraints
 
 - Do not invent system behaviors that contradict requirements  
-- If assumptions are made, clearly state them before test cases  
+- If assumptions are made, clearly state them before generating test cases  
 - Keep test cases implementation-independent (black-box testing)  
 - Do not include automation code unless explicitly requested  
 
@@ -281,3 +293,4 @@ Professional, clear, and structured — like documentation written by a senior Q
 11. **Junior-friendly.** A junior tester who has never seen this feature should be able to
     execute every test case without asking questions. If they'd need to ask "where do I
     click?" or "what should I type?" — your test case is incomplete.
+12. All the outputs are written by markdown format and Vietnamese, use artifact if necessary to make it easier to understand and long content. 
