@@ -1,5 +1,5 @@
 ---
-description: 
+description: Sinh manual test cases chất lượng cao theo quy trình AI-RBT 6 bước (Risk-Based Testing) từ requirements.
 ---
 
 # Quy trình tạo Testcase (Testcase Generation Workflow)
