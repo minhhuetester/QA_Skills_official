@@ -1,5 +1,5 @@
 ---
-description: Quy trình chuẩn (Workflow) phân tích yêu cầu và tạo kịch bản kiểm thử (Manual Testcase)
+description: 
 ---
 
 # Quy trình tạo Testcase (Testcase Generation Workflow)
