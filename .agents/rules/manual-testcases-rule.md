@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Quy tắc xây dựng Manual Testcase (QA Standards)
 
 ## 1. Mô tả (Description)
@@ -43,3 +47,4 @@
 - **Trường phụ trợ (Meta fields):** Yêu cầu gán đầy đủ thuộc tính để phục vụ cho việc quản lý test plan & regression test:
   - **Priority:** (Critical, High, Medium, Low)
   - **Test Type:** (Functional, UI/UX, Security, Performance...)
+
