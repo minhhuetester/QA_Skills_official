@@ -227,8 +227,8 @@ NO expected result contains vague words ("correctly", "properly", "appropriate")
 ## Rules for Writing Test Cases
 
 - TC ID must be unique and sequential  
-- Test Steps must be clear and executable. Action-Oriented Steps
-- Expected Result must be measurable and specific, No Ambiguity and navigate clearly.
+- Test Steps must be clear and executable. Action-Oriented Steps. Each step should be written in a new line.
+- Expected Result must be measurable and specific, No Ambiguity and navigate clearly. Each expected result should be written in a new line.
 - Do NOT combine multiple validations into one test case  
 - Each test case verifies one main behavior  
 - Use professional, concise language  
