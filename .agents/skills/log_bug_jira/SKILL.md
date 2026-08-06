@@ -10,74 +10,27 @@
 
 **Rules**
 
-- Bắt đầu bằng tên Module hoặc Feature.
-- Mô tả ngắn gọn vấn đề (không mô tả cách sửa).
-- Dùng thì hiện tại.
-- Tránh dùng các tiêu đề chung chung như "Bug", "Error", "Issue".
-- Một bug chỉ mô tả **một vấn đề**.
-- **Mô-đun**: Sử dụng tên tính năng hoặc tên màn hình.
-- **Điều gì đã xảy ra**: Mô tả hành vi không chính xác.
-- **Khi nào thực hiện thao tác nào**: Mô tả hành động của người dùng gây ra sự cố.
-- Giữ tiêu đề ngắn gọn (tốt nhất là dưới 80 ký tự).
-- Mô tả triệu chứng, không phải nguyên nhân gốc rễ hoặc giải pháp.
-- Một tiêu đề lỗi chỉ nên mô tả một vấn đề duy nhất.
+- Format: **[Module] What happened when doing what**
+- Start with the feature or screen name.
+- Describe the incorrect behavior, not the expected behavior.
+- Describe the user action that triggers the issue.
+- Use present tense.
+- Keep the title concise (preferably under 80 characters).
+- Do not include the root cause or solution.
+- One bug title should describe only one issue.
 
 ---
 
-### 🇺🇸 English Examples
+### Examples
 
-```text
-[Login] Google login fails
-```
-
-```text
-[Hotel Search] No results are returned for 28-night stay
-```
-
-```text
-[Email Verification] Send Verification Code button remains enabled before resend timeout
-```
-
-```text
-[Vote] Vote button is enabled while ranking popup is displayed
-```
-
----
-
-### 🇻🇳 Ví dụ Tiếng Việt
-
-```text
-[Đăng nhập] Không thể đăng nhập bằng Google
-```
-
-```text
-[Tìm kiếm khách sạn] Không trả về kết quả khi tìm kiếm 28 đêm
-```
-
-```text
-[Xác thực Email] Nút Nhận mã xác thực vẫn được kích hoạt trước thời gian gửi lại
-```
-
----
-
-### 🇰🇷 한국어 예시
-
-```text
-[로그인] Google 로그인 실패
-```
-
-```text
-[호텔 검색] 28박 검색 시 결과가 조회되지 않음
-```
-
-```text
-[이메일 인증] 재전송 가능 시간 전에도 [인증번호 받기] 버튼이 활성화됨
-```
-
-```text
-[투표] 랭킹 팝업 노출 중에도 투표 버튼이 활성화됨
-```
-
+| Rule | English | Tiếng Việt | 한국어 |
+|------|---------|------------|--------|
+| **[Module] What happened when doing what** | `[Email Verification] Send Verification Code button remains enabled after requesting a verification code` | `[Xác thực Email] Nút Nhận mã xác thực vẫn được kích hoạt sau khi yêu cầu mã xác thực` | `[이메일 인증] 인증번호 요청 후에도 [인증번호 받기] 버튼이 활성화됨` |
+| **[Module] What happened when doing what** | `[Login] Login fails when signing in with a Google account` | `[Đăng nhập] Không thể đăng nhập khi đăng nhập bằng tài khoản Google` | `[로그인] Google 계정으로 로그인 시 로그인에 실패함` |
+| **[Module] What happened when doing what** | `[Hotel Search] No search results are returned when searching for a 28-night stay` | `[Tìm kiếm khách sạn] Không trả về kết quả khi tìm kiếm lưu trú 28 đêm` | `[호텔 검색] 28박 검색 시 검색 결과가 조회되지 않음` |
+| **[Module] What happened when doing what** | `[Vote] Vote button remains enabled while the ranking popup is displayed` | `[Bình chọn] Nút Bình chọn vẫn được kích hoạt khi popup bảng xếp hạng đang hiển thị` | `[투표] 랭킹 팝업 노출 중에도 투표 버튼이 활성화됨` |
+| **[Module] What happened when doing what** | `[Payment] Payment method changes to Manual Input after saving settings` | `[Thanh toán] Phương thức thanh toán chuyển thành Nhập thủ công sau khi lưu cài đặt` | `[결제] 설정 저장 후 결제 방식이 수동 입력으로 변경됨` |
+| **[Module] What happened when doing what** | `[Comment] Spam warning message is not displayed when submitting duplicate comments` | `[Bình luận] Không hiển thị cảnh báo spam khi gửi bình luận trùng lặp` | `[댓글] 동일한 댓글 작성 시 스팸 경고 메시지가 표시되지 않음` |
 ---
 
 # 🐞 Jira Bug Report Template (Simple / 간단 버전)
