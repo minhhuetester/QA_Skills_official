@@ -42,11 +42,10 @@ Template rút gọn chỉ gồm 5 thành phần cốt lõi — dùng khi cần l
 ## 🇻🇳 Phiên bản Tiếng Việt
 
 ```
-[Môi trường]
-DEV
+[Môi trường]: DEV/ STAGING/ PRODUCTION
 
 [Điều kiện tiên quyết]
-Kết hợp class
+- Kết hợp class
 
 [Các bước tái hiện]
 Đặt phòng/Thanh toán > Thông tin hành khách > Thông tin người đặt
@@ -64,8 +63,7 @@ Từ trạng thái vô hiệu hóa, nút chỉ được kích hoạt lại khi �
 ## 🇬🇧 English Version
 
 ```
-[Environment]
-DEV
+[Environment]: DEV/ STAGING/ PRODUCTION
 
 [Precondition]
 Class combination
@@ -86,8 +84,7 @@ The button should remain disabled and only become active again once resending is
 ## 🇰🇷 한국어 버전
 
 ```
-[서버]
-DEV
+[서버]: DEV/ STAGING/ PRODUCTION
 
 [사전 조건]
 클래스 결합
